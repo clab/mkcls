@@ -4,8 +4,11 @@ Franz Och's `mkcls`
 ### Overview
 `mkcls` is a suite of algorithms for clustering words based on bigram contextual similarity written by Franz Och. The quality of the clusters is quite good relative those produced by similar clustering algorithms.
 
+The code was written in the early 1990's, and has been modernized to work with modern C++ compilers, but it is otherwise unchanged.
+
 ### Recommended usage
 
+    make
     ./run-mkcls.pl --help
 
 This wrapper script helps set up the arguments to `mkcls` properly, and puts the output into a format that is similar to the one used by [Percy Liang's Brown clustering implemention](https://github.com/percyliang/brown-cluster), which several tools use. This lets you use `mkcls` output in place of `wcluster`'s, which can give slightly better results in some applications.
