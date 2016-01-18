@@ -4,7 +4,7 @@ use Getopt::Long;
 use File::Temp;
 use Cwd qw(getcwd);
 my $SCRIPT_DIR; BEGIN { use Cwd qw/ abs_path /; use File::Basename; $SCRIPT_DIR = dirname(abs_path($0)); }
-my $MKCLS = "$SCRIPT_DIR/mkcls";
+my $MKCLS = "$SCRIPT_DIR/src/mkcls";
 die "Can't find $MKCLS ... did you compile it?\n" unless -f $MKCLS;
 die "Can't execute $MKCLS ... check permissions.\n" unless -x $MKCLS;
 
